@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Productos</title>
+</head>
+<body>
+
+<h1>Productos</h1>
+
+<div>
+    <p id ="nombre"></p>
+    <p id ="descripcion"></p>
+    <img id ="url" src="" alt="imagen producto"></img>
+    <p id ="precio"></p>
+</div>
+
+<script>
+    let producto = {
+            nombre: "Cámara Digital",
+            descripcion: "Cámara compacta con zoom 20x y grabación Full HD.",
+            url: "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-1590_D3500-O9tTpSQu-medium.png",
+            precio: 250.00
+}
+
+    let nombre = document.getElementById("nombre");
+    nombre.innerText = producto.nombre;
+
+    let descripcion = document.getElementById("descripcion");
+    descripcion.innerText = producto.descripcion;
+
+    let url = document.getElementById("url");
+    url.src = producto.url;
+
+    let precio = document.getElementById("precio");
+    precio.innerText = producto.precio;
+</script>
+</body>
+</html>
